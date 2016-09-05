@@ -43,7 +43,7 @@ if($file)
 function getNowFileName()
 {
     //获取某目录下所有文件、目录名（不包括子目录下文件、目录名）
-    $localFile = scandir('./');
+    $localFile = scandir('/home/mysql_backup/');
     if(is_array($localFile))
     {
         $time = ''; //保存获取到最新事件的文件
