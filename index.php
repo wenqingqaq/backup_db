@@ -19,7 +19,7 @@ if($file)
     // 构建 UploadManager 对象
     $uploadMgr = new \Qiniu\Storage\UploadManager();
     // 要上传文件的本地路径
-    $filePath = './'.$file;
+    $filePath = '../'.$file;
     // 上传到七牛后保存的文件名
     $key = $file;
     // 调用 UploadManager 的 putFile 方法进行文件的上传
